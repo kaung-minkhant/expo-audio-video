@@ -9,7 +9,7 @@ export default function App() {
   async function playSound() {
     console.log("Loading Sound");
     const { sound } = await Audio.Sound.createAsync(
-      require("./assets/music.mp3")
+      require("../assets/music.mp3")
     );
     setSound(sound);
 
